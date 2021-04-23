@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Galen Reports</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="galen-report.css"></link>
+        <script src="vue.js"></script>
+        <script src="galen-report.js"></script>
+        <script>
+        var REPORT_DATA = {
+  "tests" : [ {
+    "name" : "Test on firefox on mobile",
+    "startedAt" : 1619203054005,
+    "endedAt" : 1619203054943,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 0,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 1
+    },
+    "testId" : "1-test-on-firefox-on-mobile",
+    "duration" : 938,
+    "groups" : [ ],
+    "failed" : true,
+    "exceptionMessage" : "WrappedException: Wrapped org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 1\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'shubham-HP-Laptop-15s-dr0xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '11.0.10'\nDriver info: driver.version: FirefoxDriver\nremote stacktrace:  (<cmd>#37)",
+    "exceptionStacktrace" : "org.mozilla.javascript.WrappedException: Wrapped org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 1\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'shubham-HP-Laptop-15s-dr0xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '11.0.10'\nDriver info: driver.version: FirefoxDriver\nremote stacktrace:  (<cmd>#37)\n\tat org.mozilla.javascript.Context.throwAsScriptRuntimeEx(Context.java:1914)\n\tat org.mozilla.javascript.MemberBox.invoke(MemberBox.java:148)\n\tat org.mozilla.javascript.NativeJavaMethod.call(NativeJavaMethod.java:225)\n\tat org.mozilla.javascript.optimizer.OptRuntime.callN(OptRuntime.java:52)\n\tat org.mozilla.javascript.gen._cmd__19._c_createDriver_2(<cmd>:37)\n\tat org.mozilla.javascript.gen._cmd__19.call(<cmd>)\n\tat org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:63)\n\tat org.mozilla.javascript.gen._home_shubham_tutorial_GalenFrameworkDemo_tests_homepage_test_js_21._c_anonymous_3(/home/shubham/tutorial/GalenFrameworkDemo/tests/homepage.test.js:24)\n\tat org.mozilla.javascript.gen._home_shubham_tutorial_GalenFrameworkDemo_tests_homepage_test_js_21.call(/home/shubham/tutorial/GalenFrameworkDemo/tests/homepage.test.js)\n\tat org.mozilla.javascript.ScriptRuntime.applyOrCall(ScriptRuntime.java:2697)\n\tat org.mozilla.javascript.BaseFunction.execIdCall(BaseFunction.java:287)\n\tat org.mozilla.javascript.IdFunctionObject.call(IdFunctionObject.java:101)\n\tat org.mozilla.javascript.optimizer.OptRuntime.callN(OptRuntime.java:52)\n\tat org.mozilla.javascript.gen._cmd__18._c_invokeFunc_2(<cmd>:35)\n\tat org.mozilla.javascript.gen._cmd__18.call(<cmd>)\n\tat org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:63)\n\tat org.mozilla.javascript.gen._cmd__18._c_anonymous_22(<cmd>:280)\n\tat org.mozilla.javascript.gen._cmd__18.call(<cmd>)\n\tat org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:399)\n\tat org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3452)\n\tat org.mozilla.javascript.gen._cmd__18.call(<cmd>)\n\tat org.mozilla.javascript.JavaAdapter.doCall(JavaAdapter.java:606)\n\tat org.mozilla.javascript.JavaAdapter.access$000(JavaAdapter.java:15)\n\tat org.mozilla.javascript.JavaAdapter$1.run(JavaAdapter.java:586)\n\tat org.mozilla.javascript.Context.call(Context.java:526)\n\tat org.mozilla.javascript.ContextFactory.call(ContextFactory.java:509)\n\tat org.mozilla.javascript.JavaAdapter.callMethod(JavaAdapter.java:583)\n\tat adapter1.execute(<adapter>)\n\tat com.galenframework.TestRunnable.runTest(TestRunnable.java:75)\n\tat com.galenframework.TestRunnable.run(TestRunnable.java:101)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:834)\nCaused by: org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 1\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'shubham-HP-Laptop-15s-dr0xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '11.0.10'\nDriver info: driver.version: FirefoxDriver\nremote stacktrace: \n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)\n\tat org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)\n\tat org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)\n\tat com.galenframework.browser.SeleniumBrowserFactory.getDriver(SeleniumBrowserFactory.java:100)\n\tat com.galenframework.browser.SeleniumBrowserFactory.createLocalBrowser(SeleniumBrowserFactory.java:94)\n\tat com.galenframework.browser.SeleniumBrowserFactory.openBrowser(SeleniumBrowserFactory.java:70)\n\tat com.galenframework.utils.GalenUtils.createDriver(GalenUtils.java:267)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.mozilla.javascript.MemberBox.invoke(MemberBox.java:126)\n\t... 31 more\n"
+  }, {
+    "name" : "Test on firefox on desktop",
+    "startedAt" : 1619203054943,
+    "endedAt" : 1619203055094,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 0,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 1
+    },
+    "testId" : "2-test-on-firefox-on-desktop",
+    "duration" : 151,
+    "groups" : [ ],
+    "failed" : true,
+    "exceptionMessage" : "WrappedException: Wrapped org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 1\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'shubham-HP-Laptop-15s-dr0xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '11.0.10'\nDriver info: driver.version: FirefoxDriver\nremote stacktrace:  (<cmd>#37)",
+    "exceptionStacktrace" : "org.mozilla.javascript.WrappedException: Wrapped org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 1\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'shubham-HP-Laptop-15s-dr0xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '11.0.10'\nDriver info: driver.version: FirefoxDriver\nremote stacktrace:  (<cmd>#37)\n\tat org.mozilla.javascript.Context.throwAsScriptRuntimeEx(Context.java:1914)\n\tat org.mozilla.javascript.MemberBox.invoke(MemberBox.java:148)\n\tat org.mozilla.javascript.NativeJavaMethod.call(NativeJavaMethod.java:225)\n\tat org.mozilla.javascript.optimizer.OptRuntime.callN(OptRuntime.java:52)\n\tat org.mozilla.javascript.gen._cmd__19._c_createDriver_2(<cmd>:37)\n\tat org.mozilla.javascript.gen._cmd__19.call(<cmd>)\n\tat org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:63)\n\tat org.mozilla.javascript.gen._home_shubham_tutorial_GalenFrameworkDemo_tests_homepage_test_js_21._c_anonymous_3(/home/shubham/tutorial/GalenFrameworkDemo/tests/homepage.test.js:24)\n\tat org.mozilla.javascript.gen._home_shubham_tutorial_GalenFrameworkDemo_tests_homepage_test_js_21.call(/home/shubham/tutorial/GalenFrameworkDemo/tests/homepage.test.js)\n\tat org.mozilla.javascript.ScriptRuntime.applyOrCall(ScriptRuntime.java:2697)\n\tat org.mozilla.javascript.BaseFunction.execIdCall(BaseFunction.java:287)\n\tat org.mozilla.javascript.IdFunctionObject.call(IdFunctionObject.java:101)\n\tat org.mozilla.javascript.optimizer.OptRuntime.callN(OptRuntime.java:52)\n\tat org.mozilla.javascript.gen._cmd__18._c_invokeFunc_2(<cmd>:35)\n\tat org.mozilla.javascript.gen._cmd__18.call(<cmd>)\n\tat org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:63)\n\tat org.mozilla.javascript.gen._cmd__18._c_anonymous_22(<cmd>:280)\n\tat org.mozilla.javascript.gen._cmd__18.call(<cmd>)\n\tat org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:399)\n\tat org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3452)\n\tat org.mozilla.javascript.gen._cmd__18.call(<cmd>)\n\tat org.mozilla.javascript.JavaAdapter.doCall(JavaAdapter.java:606)\n\tat org.mozilla.javascript.JavaAdapter.access$000(JavaAdapter.java:15)\n\tat org.mozilla.javascript.JavaAdapter$1.run(JavaAdapter.java:586)\n\tat org.mozilla.javascript.Context.call(Context.java:526)\n\tat org.mozilla.javascript.ContextFactory.call(ContextFactory.java:509)\n\tat org.mozilla.javascript.JavaAdapter.callMethod(JavaAdapter.java:583)\n\tat adapter1.execute(<adapter>)\n\tat com.galenframework.TestRunnable.runTest(TestRunnable.java:75)\n\tat com.galenframework.TestRunnable.run(TestRunnable.java:101)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:834)\nCaused by: org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 1\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'shubham-HP-Laptop-15s-dr0xxx', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '11.0.10'\nDriver info: driver.version: FirefoxDriver\nremote stacktrace: \n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)\n\tat org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)\n\tat org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)\n\tat com.galenframework.browser.SeleniumBrowserFactory.getDriver(SeleniumBrowserFactory.java:100)\n\tat com.galenframework.browser.SeleniumBrowserFactory.createLocalBrowser(SeleniumBrowserFactory.java:94)\n\tat com.galenframework.browser.SeleniumBrowserFactory.openBrowser(SeleniumBrowserFactory.java:70)\n\tat com.galenframework.utils.GalenUtils.createDriver(GalenUtils.java:267)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.mozilla.javascript.MemberBox.invoke(MemberBox.java:126)\n\t... 31 more\n"
+  } ]
+};
+        </script>
+
+    </head>
+    <body>
+        <div id="app">
+            <div class="overview-table-wrapper">
+                <div v-if="groups.length > 0">
+                    <h4>Groups</h4>
+                    <ul class="test-groups">
+                        <li>
+                            <span class="link" v-on:click="toggleAllGroups()">All</label>
+                        </li>
+                        <li v-for="(group, groupIndex) in groups">
+                            <span v-if="selectedGroup !== group.name" class="link" v-on:click="toggleGroup(group.name)">{{group.name}}</span>
+                            <span v-else>{{group.name}}</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <table class="overview-table">
+                    <thead>
+                        <tr>
+                            <th v-for="column in tableColumns" v-bind:class="{'sorted-column': sorting.columnField === column.field}">
+                                <span class="link" v-on:click="sortTable(column)">{{column.name}}</span>
+                                <span class="sorting-icon"
+                                    v-if="sorting.columnField === column.field"
+                                    v-bind:class="[sorting.order === 1 ? 'sorting-down' : 'sorting-up']"></span>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="test in tests" v-if="test.show">
+                            <td v-for="column in tableColumns" v-bind:class="['cell-' + column.field]">
+                                <div v-if="column.field === 'name'">
+                                    <a class="link" v-bind:href="test.testId + '.html'">{{test.name.value}}</a>
+                                </div>
+                                <div v-else>{{test[column.field].value}}</div>
+                            </td>
+                            <td>
+                                <table class="progress-bar">
+                                    <tbody>
+                                        <tr>
+                                            <td class="bar-passed"
+                                                v-bind:style="{width: test.progress.passed + '%'}"
+                                                v-bind:class="{hidden: test.progress.passed < 0.5}"></td>
+                                            <td class="bar-failed"
+                                                v-bind:style="{width: test.progress.failed + '%'}"
+                                                v-bind:class="{hidden: test.progress.failed < 0.5}"></td>
+                                            <td class="bar-warning"
+                                                v-bind:style="{width: test.progress.warning + '%'}"
+                                                v-bind:class="{hidden: test.progress.warning < 0.5}"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script>renderTestOverviewReport(REPORT_DATA);</script>
+    </body>
+</html>
